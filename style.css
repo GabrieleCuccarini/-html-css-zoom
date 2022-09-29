@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.head-container {
+    background-color: black;
+    width: 100vw;
+    position: fixed;
+}
+
+.icon-text-head {
+    color: white;
+    text-align: end;
+}
+
+.icon-text-head button{
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: gray;
+}

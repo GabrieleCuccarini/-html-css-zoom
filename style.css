@@ -4,19 +4,23 @@
     box-sizing: border-box;
 }
 
+button {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(34,34,34);
+    border: 0;
+    cursor: pointer;
+}
 
 header {
     flex-shrink: 0;
 }
 
 main {
-    width: 100%;
     background-color: black;
-    flex-grow: 2;
 }
 
 footer {
-    flex-basis: 5%;
     width: 100%;
     background-color: rgb(34,34,34);
     flex-shrink: 0;
@@ -36,8 +40,6 @@ footer {
 }
 
 .all-container {
-    width: 100vw;
-    height: 100vh;
     display: flex;
     flex-direction: column;
 }
@@ -68,12 +70,13 @@ footer {
 }
 
 .main-container.flex {
-    margin: 100px auto 50px auto;
-    width: 90%;
+    margin: 100px;
     display: flex;
     flex-wrap: wrap;
     column-gap: .5rem;
     row-gap: 1rem;
+    flex-grow: 1;
+    overflow: auto;
 }
 
 .icon-text-container {
@@ -92,7 +95,7 @@ footer {
 
 .left{
     display: flex;
-    margin: 20px 0 20px 10px;
+    margin: 20px 0 10px 10px;
     text-align: center;
 }
 
@@ -106,7 +109,7 @@ footer {
 
 .middle {
     display: flex;
-    margin: 20px 0 20px 10px;
+    margin: 20px 0 10px 10px;
     text-align: center;
     column-gap: 15px;
 }
@@ -143,5 +146,5 @@ footer .footer-container .middle .unique {
     background-color: rgb(74,74,74);
     justify-content: center;
     align-items: center;
-    padding: 20px 10px;
+    padding: 10px 15px;
 }
